@@ -1,0 +1,187 @@
+{
+  "resources": [
+    {
+      "category": "iphone",
+      "items": [
+        {
+          "name": "iPhone 8",
+          "price": 1600,
+          "description": "iPhone 8 : élégant, rapide, 64/256 Go, appareil photo 12 MP.",
+          "image": "../public/resources/iphone/iphone8.png"
+        },
+        {
+          "name": "iPhone 11",
+          "price": 4500,
+          "description": "iPhone 11 : puissant, double appareil photo 12 MP, 64/128/256 Go.",
+          "image": "../public/resources/iphone/iphone11.png"
+        },
+        {
+          "name": "iPhone 11 Pro Max",
+          "price": 4700,
+          "description": "iPhone 11 Pro Max : écran 6,5'' OLED, triple caméra 12 MP, 64/256/512 Go.",
+          "image": "../public/resources/iphone/iphone11proMax.png"
+        },
+        {
+          "name": "iPhone 12",
+          "price": 5000,
+          "description": "iPhone 12 : écran 6,1\", A14, jusqu'à 256 Go, 12 MP, 5G, IP68.",
+          "image": "../public/resources/iphone/iphone12.png"
+        },
+        {
+          "name": "iPhone 12 Pro Max",
+          "price": 5200,
+          "description": "iPhone 12 Pro Max : écran 6,7\", A14, 512 Go, 5G.",
+          "image": "../public/resources/iphone/iphone12proMax.png"
+        },
+        {
+          "name": "iPhone 13 Pro",
+          "price": 7000,
+          "description": "iPhone 13 Pro : écran 6,1\", A15, 1 To, 5G.",
+          "image": "../public/resources/iphone/iphone13pro.png"
+        },
+        {
+          "name": "iPhone 14",
+          "price": 10200,
+          "description": "iPhone 14 : écran 6,1\", A15, 512 Go, 5G.",
+          "image": "../public/resources/iphone/iphone14.png"
+        },
+        {
+          "name": "iPhone 15",
+          "price": 4500,
+          "description": "iPhone 15 : écran 6,1\", A16, 512 Go, 5G.",
+          "image": "../public/resources/iphone/iphone11.png"
+        },
+        {
+          "name": "iPhone X",
+          "price": 2300,
+          "description": "iPhone X : écran 5,8\", A11, 256 Go, 5G.",
+          "image": "../public/resources/iphone/iphone11.png"
+        },
+        {
+          "name": "iPhone Xr",
+          "price": 4500,
+          "description": "iPhone XR : écran 6,1\", A12, 256 Go, 5G.",
+          "image": "../public/resources/iphone/iphone11.png"
+        }
+      ]
+    },
+    {
+      "category": "Laptops",
+      "items": [
+        {
+          "name": "Laptop msi",
+          "price": 8000,
+          "description": "Processeur : i7, RAM : 16gb, GPU : Nvidia GTX 1050ti, stockage : 256GB ssd",
+          "image": "../public/resources/Laptops/msi.png"
+        },
+        {
+          "name": "Laptop msi",
+          "price": 8000,
+          "description": "Processeur : i7 10eme Gen, RAM : 16gb, GPU : Nvidia GTX 1050ti, stockage : 512GB ssd, Resolution Full HD 1920x1080",
+          "image": "../public/resources/Laptops/msi.png"
+        },
+        {
+          "name": "Lenovo Legion",
+          "price": 12000,
+          "description": "Processeur : i7 10eme Gen, RAM : 16gb, GPU : Nvidia RTX 2060, stockage : 512GB ssd, Resolution Full HD 1920x1080",
+          "image": "../public/resources/Laptops/lenovo-legion.png"
+        },
+        {
+          "name": "Asus TUF",
+          "price": 15000,
+          "description": "Processeur : i7 10eme Gen, RAM : 32gb, GPU : Nvidia RTX 2060, stockage : 512GB ssd, Resolution Full HD 1920x1080",
+          "image": "../public/resources/Laptops/asus-tuf.png"
+        },
+        {
+          "name": "Msi Raider",
+          "price": 25000,
+          "description": "Processeur : i9 14eme Gen, RAM : 32gb, GPU : Nvidia RTX 4080, stockage : 512GB ssd, Resolution Full HD 3840 x 2400",
+          "image": "../public/resources/Laptops/msi-raider.png"
+        },
+        {
+          "name": "HP Elitebook",
+          "price": 4000,
+          "description": "Processeur : i5 8eme Gen, RAM : 8gb , stockage : 256GB ssd",
+          "image": "../public/resources/Laptops/hp-elitbook.png"
+        },
+        {
+          "name": "Lenovo LOQ",
+          "price": 8000,
+          "description": "Processeur : i5 12eme Gen, RAM : 16gb, GPU : Nvidia RTX 4080,  stockage : 512GB ssd,  Resolution Full HD 1920x1080",
+          "image": "../public/resources/Laptops/msi.png"
+        },
+        {
+          "name": "Laptop Asus",
+          "price": 3000,
+          "description": "Processeur : i5 6eme Gen, RAM : 8gb , stockage : 256GB ssd",
+          "image": "../public/resources/Laptops/asus.png"
+        }
+      ]
+    },
+    {
+      "category": "redmi",
+      "items": [
+        {
+          "name": "Redmi 8",
+          "price": 850,
+          "description": "Redmi 8 : écran 6,22\", Snapdragon 439, 64 Go, 4G.",
+          "image": "../public/resources/redmi/redmi8.png"
+        },
+        {
+          "name": "Redmi 9",
+          "price": 1200,
+          "description": "Redmi 9 : écran 6,53\", Helio G80, 64 Go, 4G.",
+          "image": "../public/resources/redmi/redmi9.png"
+        },
+        {
+          "name": "Redmi 10",
+          "price": 1300,
+          "description": "Redmi 8 : écran 6,22\", Snapdragon 439, 64 Go, 4G.",
+          "image": "../public/resources/redmi/redmi10.png"
+        },
+        {
+          "name": "Redmi 13C",
+          "price": 1500,
+          "description": "Redmi 13C : écran 6,71\", MediaTek Helio G85, 64 Go, 4G.",
+          "image": "../public/resources/redmi/redmi13c.png"
+        },
+        {
+          "name": "Redmi A2",
+          "price": 1400,
+          "description": "Redmi A2 : écran 6,52\", MediaTek Helio G36, 32 Go, 4G.",
+          "image": "../public/resources/redmi/redmiA2.png"
+        },
+        {
+          "name": "Redmi Note 11 Pro",
+          "price": 1400,
+          "description": "Redmi Note 11 Pro : écran 6,67\", Snapdragon 695, 128 Go, 5G.",
+          "image": "../public/resources/redmi/redmiNote11pro.png"
+        },
+        {
+          "name": "Redmi Note 11 Pro 2",
+          "price": 1400,
+          "description": "Redmi Note 11 Pro : écran 6,67\", Snapdragon 695, 128 Go, 5G.",
+          "image": "../public/resources/redmi/redmiNote11pro2.png"
+        },
+        {
+          "name": "Redmi Note 12S",
+          "price": 1500,
+          "description": "Redmi Note 12S : écran 6,43\", MediaTek Helio G96, 128 Go, 4G.",
+          "image": "../public/resources/redmi/redmiNote12S.png"
+        },
+        {
+          "name": "Redmi Note 13",
+          "price": 1600,
+          "description": "Redmi Note 13 : écran 6,67\", MediaTek Dimensity 700, 128 Go, 5G.",
+          "image": "../public/resources/redmi/redmiNote13.png"
+        },
+        {
+          "name": "Redmi Note 13 Pro",
+          "price": 1700,
+          "description": "Redmi Note 13 Pro : écran 6,67\", MediaTek Dimensity 1080, 128 Go, 5G.",
+          "image": "../public/resources/redmi/redmiNote13Pro.png"
+        }
+      ]
+    }
+  ]
+}

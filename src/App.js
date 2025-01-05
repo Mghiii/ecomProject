@@ -1,6 +1,6 @@
 import React from 'react';
 import './app.css';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Import des composants de pages
 import Home from './pages/Home';
@@ -9,6 +9,7 @@ import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
 import Products from './pages/Products';
 import Navbar from './components/nav/Navbar';
+import Footer from './components/nav/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/products" element={<Products />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }

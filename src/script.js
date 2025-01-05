@@ -1,3 +1,9 @@
+import msiLap2 from './assets/images/msiLap2.png';
+import msiLap from './assets/images/msiLap.png';
+import iphoneBlog from './assets/images/iphoneBlog.png';
+import iphoneBlog1 from './assets/images/iphoneBlog1.png';
+import tuf1 from './assets/images/tuf1.jpg';
+import tuf2 from './assets/images/tuf2.jpg';
 // Fonction pour gérer le menu principal
 export function toggleMenu() {
   const menuList = document.getElementById('menuList');
@@ -38,3 +44,29 @@ export function toggleDropMenu() {
     subMenu.classList.remove('open-class'); // Ferme Dropdown 1
   }
 }
+
+export const overMouse = () => {
+  const img = document.getElementById('msiLap');
+  img.src = msiLap2;
+};
+export const outMouse = () => {
+  const img = document.getElementById('msiLap');
+  img.src = msiLap;
+};
+
+export const overMouse2 = () => {
+  const img = document.getElementById('tuf');
+  img.src = tuf2;
+};
+export const outMouse2 = () => {
+  const img = document.getElementById('tuf');
+  img.src = tuf1;
+};
+export const overMouse3 = () => {
+  const img = document.getElementById('iphone');
+  img.src = iphoneBlog1;
+};
+export const outMouse3 = () => {
+  const img = document.getElementById('iphone');
+  img.src = iphoneBlog;
+};

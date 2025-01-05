@@ -79,14 +79,14 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/contact"
                 className="nav-links"
                 id="link5"
                 activeClassName="active"
               >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
