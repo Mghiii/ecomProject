@@ -627,6 +627,9 @@
   .descPartenariat p {
     text-align: center;
   }
+  .descPartenariat p {
+    font-size: 14px;
+  }
   .imgPartenatiat {
     gap: 10px;
   }
