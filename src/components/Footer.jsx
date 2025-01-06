@@ -1,10 +1,10 @@
 import React from 'react';
 import './footer.css';
-import facebook from '../../assets/social/icons8-facebook-nouveau-48.png';
-import instagram from '../../assets/social/icons8-instagram-48.png';
-import x from '../../assets/social/icons8-x-48.png';
-import gmail from '../../assets/social/icons8-gmail-nouveau-48.png';
-import github from '../../assets/social/icons8-github-48.png';
+import facebook from '../assets/social/icons8-facebook-nouveau-48.png';
+import instagram from '../assets/social/icons8-instagram-48.png';
+import x from '../assets/social/icons8-x-48.png';
+import gmail from '../assets/social/icons8-gmail-nouveau-48.png';
+import github from '../assets/social/icons8-github-48.png';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {

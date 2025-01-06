@@ -1,11 +1,11 @@
 import React, { useState } from 'react'; // Importez useState
 import './navbar.css'; // Ajoutez votre fichier CSS
-import logo from '../../assets/images/logo.png';
-import product1 from '../../assets/products/asusGammingLap1.png';
-import product2 from '../../assets/products/asusLap1.png';
-import product3 from '../../assets/products/iphone13.png';
+import logo from '../assets/images/logo.png';
+import product1 from '../assets/products/asusGammingLap1.png';
+import product2 from '../assets/products/asusLap1.png';
+import product3 from '../assets/products/iphone13.png';
 import { Link, NavLink } from 'react-router-dom';
-import { toggleMenu, toggleSubMenu, toggleDropMenu } from '../../script'; // Importez les fonctions
+import { toggleMenu, toggleSubMenu, toggleDropMenu } from '../script'; // Importez les fonctions
 
 const Navbar = () => {
   const [subMenuOpen, setSubMenuOpen] = useState(false); // Ajouter état pour le sous-menu

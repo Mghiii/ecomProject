@@ -8,8 +8,8 @@ import About from './pages/About';
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
 import Products from './pages/Products';
-import Navbar from './components/nav/Navbar';
-import Footer from './components/nav/Footer';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
