@@ -1,0 +1,69 @@
+.sectionUne {
+  padding: 50px;
+}
+.desc1 {
+  padding-left: 140px;
+}
+.desc1 h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+}
+.desc1 h1 span {
+  color: #2cc29c;
+  font-weight: 500;
+}
+.desc1 p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.desc2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+.class1 {
+  width: 35%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.class1 h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.class1 h1 span {
+  color: #2cc29c;
+  font-weight: 600;
+}
+.class1 p {
+  font-size: 18px;
+}
+
+.class2 {
+  width: 40%;
+}
+.class2 img {
+  width: 100%;
+  border-radius: 35px;
+}
+.class1 button {
+  margin-top: 20px;
+  padding: 15px 40px;
+  border-radius: 0;
+  border: #2cc29c solid;
+  background-color: black;
+  font-size: 20px;
+  font-weight: 400;
+  color: #2cc29c;
+  transition: 0.2s;
+}
+
+.class1 button:hover {
+  background-color: black;
+  border: none;
+  color: white;
+  border: white solid;
+  font-size: 22px;
+  font-weight: 500;
+}

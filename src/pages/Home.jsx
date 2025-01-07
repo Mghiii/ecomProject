@@ -3,11 +3,11 @@ import './home.css';
 import welcome from '../assets/images/welcome.jpg';
 import imagePub2 from '../assets/images/image-pub2.png';
 import imagePub1 from '../assets/images/phone-pub.jpg';
-import iphone15 from '../assets/resources/iphone/iphone15.png';
-import redmiNote13Pro from '../assets/resources/redmi/redmiNote13Pro.png';
-import lenovoLegion from '../assets/resources/Laptops/lenovo-legion.png';
-import iphoneX from '../assets/resources/iphone/iphoneX.png';
-import iphone12proMax from '../assets/resources/iphone/iphone12proMax.png';
+import iphone15 from '../assets/resources/iphone15.png';
+import redmiNote13Pro from '../assets/resources/redmiNote13Pro.png';
+import lenovoLegion from '../assets/resources/lenovo-legion.png';
+import iphoneX from '../assets/resources/iphoneX.png';
+import iphone12proMax from '../assets/resources/iphone12proMax.png';
 import msiLap from '../assets/images/msiLap.png';
 import iphoneBlog from '../assets/images/iphoneBlog.png';
 import tuf1 from '../assets/images/tuf1.jpg';
@@ -260,10 +260,10 @@ export default function Home() {
             <button>LIRE LA SUITE</button>
           </div>
           <div className="imgPartenatiat">
-            <img src={apple} alt="" id='apple'/>
-            <img src={hp} alt="" id='hp'/>
-            <img src={msi} alt="" id='msi'/>
-            <img src={samsung} alt="" id='samsung'/>
+            <img src={apple} alt="" id="apple" />
+            <img src={hp} alt="" id="hp" />
+            <img src={msi} alt="" id="msi" />
+            <img src={samsung} alt="" id="samsung" />
           </div>
         </section>
       </div>
