@@ -45,7 +45,7 @@ const Navbar = () => {
                 id="link1"
                 activeClassName="active"
               >
-                Home
+                Accueil
               </NavLink>
             </li>
             <li>
@@ -55,7 +55,7 @@ const Navbar = () => {
                 id="link2"
                 activeClassName="active"
               >
-                Products
+                Produits
               </NavLink>
             </li>
             <li>
@@ -75,7 +75,7 @@ const Navbar = () => {
                 id="link4"
                 activeClassName="active"
               >
-                About
+                Apropos
               </NavLink>
             </li>
             <li>
