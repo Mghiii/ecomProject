@@ -1,12 +1,18 @@
 import React from 'react';
 import './blogs.css';
-import imgBlog from '../assets/images/pubBlog.jpg'; // L'image de la section "desc2"
+import imgBlog from '../assets/images/pubBlog.jpg';
+import imageBlog1 from '../assets/blogResources/imageBlog1.jpg';
+import imageBlog2 from '../assets/blogResources/imageBlog2.jpg';
+import imageBlog4 from '../assets/blogResources/imageBlog4.jpg';
+import imageBlog5 from '../assets/blogResources/imageBlog5.png';
+import imageBlog6 from '../assets/blogResources/imageBlog6.jpg';
+import imageBlog7 from '../assets/blogResources/imageBlog7.jpg';
+import imageBlog8 from '../assets/blogResources/imageBlog8.jpg';
 
 export default function Blogs() {
   const data = [
     { id: 1, name: 'imageBlog1', img: '/blogResources/imageBlog1.jpg' },
     { id: 2, name: 'imageBlog2', img: '/blogResources/imageBlog2.jpg' },
-    { id: 3, name: 'imageBlog3', img: '/blogResources/imageBlog3.jpg' },
     { id: 4, name: 'imageBlog4', img: '/blogResources/imageBlog4.jpg' },
     { id: 5, name: 'imageBlog5', img: '/blogResources/imageBlog5.png' },
     { id: 6, name: 'imageBlog6', img: '/blogResources/imageBlog6.jpg' },
@@ -40,11 +46,7 @@ export default function Blogs() {
         </div>
       </section>
       <section className="sectionDeux">
-        <div>
-          {data.map((item, index) => (
-            <img key={index} src={item.img} alt={item.name} width='30px'/>
-          ))}
-        </div>
+        <img src={imageBlog1} />
       </section>
     </div>
   );
