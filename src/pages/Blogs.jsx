@@ -31,11 +31,9 @@ export default function Blogs() {
     if (currentIndex + 3 < data.length) {
       setCurrentIndex(currentIndex + 3);
     }
-    if (currentIndex === 0) {
-      document.getElementById('prev').style.display = 'block';
-    }
   };
 
+  // Fonction pour afficher les images précédentes
   const prevImages = () => {
     if (currentIndex - 3 >= 0) {
       setCurrentIndex(currentIndex - 3);
@@ -73,15 +71,27 @@ export default function Blogs() {
             <img
               key={index}
               src={item.img}
-              alt={`image ${item.id}`}
-              width="100px"
+              alt={`Blog ${item.id}`} 
+              width="550px"
+              height="400px"
             />
           ))}
         </div>
-        <button onClick={prevImages} id="prev">
+
+        <button
+          onClick={prevImages}
+          id="prev"
+          style={{ display: currentIndex === 0 ? 'none' : 'inline-block' }}
+        >
           Précédent
         </button>
-        <button onClick={nextImages} id="suiv">
+        <button
+          onClick={nextImages}
+          id="suiv"
+          style={{
+            display: currentIndex + 3 >= data.length ? 'none' : 'inline-block',
+          }}
+        >
           Suivant
         </button>
       </section>
