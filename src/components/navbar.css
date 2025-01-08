@@ -222,4 +222,11 @@ td hr {
     margin-left: 5px;
     font-size: 40px;
   }
+  .logo-image{
+    width: 50px;
+    height: 55px;
+    position: relative;
+    left: 20px;
+    top: 2px;
+  }
 }

@@ -70,3 +70,110 @@
 #prev {
   display: none;
 }
+.image-container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.mapElems {
+  width: 30%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-radius: 30px 30px 40px 40px;
+  background-color: rgba(255, 255, 255, 0.044);
+  transition: background-color 0.4s, transform 0.3s;
+}
+.mapElems:hover {
+  background-color: rgba(255, 255, 255, 0.144);
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 10px rgb(49, 49, 49);
+  color: #cab6a6;
+}
+.mapElems img {
+  width: 100%;
+  height: 350px;
+  border-radius: 30px 30px 0px 0px;
+}
+.mapElems h3 {
+  padding: 0px 20px;
+  font-weight: 500;
+  font-size: 22px;
+  cursor: pointer;
+}
+.mapElems h3:hover {
+  text-decoration: underline;
+}
+
+.mapElems p {
+  padding: 0px 20px;
+  margin: 0px 0px 10px 0px;
+  text-indent: 15px;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .desc1 {
+    padding-left: 50px;
+  }
+  .desc2 {
+    padding-top: 50px;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .class1 {
+    width: 80%;
+  }
+  .class2 {
+    width: 80%;
+  }
+}
+@media (max-width: 730px) {
+  .sectionUne {
+    padding: 30px;
+  }
+  .desc1 {
+    padding-left: 0px;
+    position: relative;
+    right: 10px;
+    z-index: -1;
+  }
+  .desc1 h1 {
+    font-size: 30px;
+  }
+  .desc1 p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .class2 {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .class1 h1 {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .class1 h1 span {
+    font-weight: 500;
+  }
+  .class1 p {
+    font-size: 14px;
+  }
+  .class1 button {
+    margin-top: 10px;
+    padding: 10px 34px;
+    border-radius: 0;
+    border: #2cc29c solid 2px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .class1 button:hover {
+    color: white;
+    border: white solid 3px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}

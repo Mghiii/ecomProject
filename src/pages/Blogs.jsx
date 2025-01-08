@@ -68,13 +68,17 @@ export default function Blogs() {
       <section className="sectionDeux">
         <div className="image-container">
           {data.slice(currentIndex, currentIndex + 3).map((item, index) => (
-            <img
-              key={index}
-              src={item.img}
-              alt={`Blog ${item.id}`} 
-              width="550px"
-              height="400px"
-            />
+            <div className="mapElems">
+              <img key={index} src={item.img} alt={`Blog ${item.id}`} />
+              <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                culpa odio accusamus sint? Placeat aliquam commodi maiores
+                mollitia! Exercitationem labore provident ea deserunt unde ad
+                iste,
+              </p>
+            </div>
           ))}
         </div>
 
