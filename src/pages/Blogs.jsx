@@ -1,24 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './blogs.css';
 import imgBlog from '../assets/images/pubBlog.jpg';
 import imageBlog1 from '../assets/blogResources/imageBlog1.jpg';
 import imageBlog2 from '../assets/blogResources/imageBlog2.jpg';
+import imageBlog3 from '../assets/blogResources/imageBlog3.jpg';
 import imageBlog4 from '../assets/blogResources/imageBlog4.jpg';
 import imageBlog5 from '../assets/blogResources/imageBlog5.png';
 import imageBlog6 from '../assets/blogResources/imageBlog6.jpg';
 import imageBlog7 from '../assets/blogResources/imageBlog7.jpg';
 import imageBlog8 from '../assets/blogResources/imageBlog8.jpg';
+import imageBlog9 from '../assets/blogResources/imageBlog9.jpg';
 
 export default function Blogs() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Tableau des images
   const data = [
-    { id: 1, name: 'imageBlog1', img: '/blogResources/imageBlog1.jpg' },
-    { id: 2, name: 'imageBlog2', img: '/blogResources/imageBlog2.jpg' },
-    { id: 4, name: 'imageBlog4', img: '/blogResources/imageBlog4.jpg' },
-    { id: 5, name: 'imageBlog5', img: '/blogResources/imageBlog5.png' },
-    { id: 6, name: 'imageBlog6', img: '/blogResources/imageBlog6.jpg' },
-    { id: 7, name: 'imageBlog7', img: '/blogResources/imageBlog7.jpg' },
-    { id: 8, name: 'imageBlog8', img: '/blogResources/imageBlog8.jpg' },
+    { id: 1, img: imageBlog1 },
+    { id: 2, img: imageBlog2 },
+    { id: 3, img: imageBlog3 },
+    { id: 4, img: imageBlog4 },
+    { id: 5, img: imageBlog5 },
+    { id: 6, img: imageBlog6 },
+    { id: 7, img: imageBlog7 },
+    { id: 8, img: imageBlog8 },
+    { id: 9, img: imageBlog9 },
   ];
+
+  const nextImages = () => {
+    if (currentIndex + 3 < data.length) {
+      setCurrentIndex(currentIndex + 3);
+    }
+    if (currentIndex === 0) {
+      document.getElementById('prev').style.display = 'block';
+    }
+  };
+
+  const prevImages = () => {
+    if (currentIndex - 3 >= 0) {
+      setCurrentIndex(currentIndex - 3);
+    }
+  };
 
   return (
     <div>
@@ -46,7 +68,22 @@ export default function Blogs() {
         </div>
       </section>
       <section className="sectionDeux">
-        <img src={imageBlog1} />
+        <div className="image-container">
+          {data.slice(currentIndex, currentIndex + 3).map((item, index) => (
+            <img
+              key={index}
+              src={item.img}
+              alt={`image ${item.id}`}
+              width="100px"
+            />
+          ))}
+        </div>
+        <button onClick={prevImages} id="prev">
+          Précédent
+        </button>
+        <button onClick={nextImages} id="suiv">
+          Suivant
+        </button>
       </section>
     </div>
   );

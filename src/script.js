@@ -4,6 +4,15 @@ import iphoneBlog from './assets/images/iphoneBlog.png';
 import iphoneBlog1 from './assets/images/iphoneBlog1.png';
 import tuf1 from './assets/images/tuf1.jpg';
 import tuf2 from './assets/images/tuf2.jpg';
+
+// import imageBlog1 from './assets/blogResources/imageBlog1.jpg';
+// import imageBlog2 from './assets/blogResources/imageBlog2.jpg';
+// import imageBlog4 from './assets/blogResources/imageBlog4.jpg';
+// import imageBlog5 from './assets/blogResources/imageBlog5.png';
+// import imageBlog6 from './assets/blogResources/imageBlog6.jpg';
+// import imageBlog7 from './assets/blogResources/imageBlog7.jpg';
+// import imageBlog8 from './assets/blogResources/imageBlog8.jpg';
+
 // Fonction pour gérer le menu principal
 export function toggleMenu() {
   const menuList = document.getElementById('menuList');
