@@ -214,6 +214,10 @@
   }
   .mapElems {
     width: 80%;
+    height: 450px;
+  }
+  .mapElems img {
+    height: 250px;
   }
   .image-container {
     padding-top: 0px;
