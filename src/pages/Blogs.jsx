@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './blogs.css';
 import imgBlog from '../assets/images/pubBlog.jpg';
 import imageBlog1 from '../assets/blogResources/imageBlog1.jpg';
@@ -13,6 +13,7 @@ import imageBlog9 from '../assets/blogResources/imageBlog9.jpg';
 
 export default function Blogs() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsToShow, setItemsToShow] = useState(3); // Nombre d'éléments à afficher
 
   // Tableau des images
   const data = [
@@ -27,17 +28,34 @@ export default function Blogs() {
     { id: 9, img: imageBlog9 },
   ];
 
+  // Détection de la largeur de l'écran
+  useEffect(() => {
+    const updateItemsToShow = () => {
+      if (window.innerWidth <= 700) {
+        setItemsToShow(1);
+      } else if (window.innerWidth <= 1100) {
+        setItemsToShow(2);
+      } else {
+        setItemsToShow(3);
+      }
+    };
+
+    // Mise à jour initiale
+    updateItemsToShow();
+
+    // Écouteur de redimensionnement
+    window.addEventListener('resize', updateItemsToShow);
+    return () => window.removeEventListener('resize', updateItemsToShow);
+  }, []);
+
+  // Fonction pour afficher l'image suivante (boucle infinie)
   const nextImages = () => {
-    if (currentIndex + 3 < data.length) {
-      setCurrentIndex(currentIndex + 3);
-    }
+    setCurrentIndex((prev) => (prev + 1) % data.length); // Repart à 0 après la dernière image
   };
 
-  // Fonction pour afficher les images précédentes
+  // Fonction pour afficher l'image précédente (boucle infinie)
   const prevImages = () => {
-    if (currentIndex - 3 >= 0) {
-      setCurrentIndex(currentIndex - 3);
-    }
+    setCurrentIndex((prev) => (prev - 1 + data.length) % data.length); // Repart à la fin après la première image
   };
 
   return (
@@ -67,11 +85,10 @@ export default function Blogs() {
       </section>
       <section className="sectionDeux">
         <div className="image-container">
-          {data.slice(currentIndex, currentIndex + 3).map((item, index) => (
-            <div className="mapElems">
-              <img key={index} src={item.img} alt={`Blog ${item.id}`} />
+          {data.slice(currentIndex, currentIndex + itemsToShow).map((item) => (
+            <div key={item.id} className="mapElems">
+              <img src={item.img} alt={`Blog ${item.id}`} />
               <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
-
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
                 culpa odio accusamus sint? Placeat aliquam commodi maiores
@@ -81,23 +98,27 @@ export default function Blogs() {
             </div>
           ))}
         </div>
-
-        <button
-          onClick={prevImages}
-          id="prev"
-          style={{ display: currentIndex === 0 ? 'none' : 'inline-block' }}
-        >
-          Précédent
-        </button>
-        <button
-          onClick={nextImages}
-          id="suiv"
-          style={{
-            display: currentIndex + 3 >= data.length ? 'none' : 'inline-block',
-          }}
-        >
-          Suivant
-        </button>
+        <div className="float">
+          <button
+            className="prev"
+            onClick={prevImages}
+            style={{ display: currentIndex === 0 ? 'none' : 'inline-block' }}
+          >
+            <i className="bi bi-chevron-double-left"></i>
+          </button>
+          <button
+            className="suiv"
+            onClick={nextImages}
+            style={{
+              display:
+                currentIndex + itemsToShow >= data.length
+                  ? 'none'
+                  : 'inline-block',
+            }}
+          >
+            <i className="bi bi-chevron-double-right"></i>
+          </button>
+        </div>
       </section>
     </div>
   );

@@ -77,7 +77,8 @@
   gap: 20px;
 }
 .mapElems {
-  width: 30%;
+  z-index: 1;
+  width: 29%;
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -113,8 +114,32 @@
   text-indent: 15px;
   font-size: 16px;
 }
+.float {
+  max-width: 100%;
+  bottom: 300px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.prev,
+.suiv {
+  background-color: #00000000;
+  color: white;
+  font-size: 30px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
 
-@media (max-width: 1000px) {
+.prev:hover,
+.suiv:hover {
+  font-size: 24px;
+  border: none;
+}
+
+@media (max-width: 1100px) {
   .desc1 {
     padding-left: 50px;
   }
@@ -128,6 +153,17 @@
   }
   .class2 {
     width: 80%;
+  }
+  .mapElems {
+    width: 40%;
+  }
+  .mapElems h3 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .mapElems p {
+    font-size: 14px;
   }
 }
 @media (max-width: 730px) {
@@ -175,5 +211,24 @@
     border: white solid 3px;
     font-size: 20px;
     font-weight: 500;
+  }
+  .mapElems {
+    width: 80%;
+  }
+  .image-container {
+    padding-top: 0px;
+  }
+  .float {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .mapElems h3 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .mapElems p {
+    text-align: center;
+    font-size: 12px;
   }
 }
