@@ -1,0 +1,206 @@
+.pst {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  border-radius: 70px;
+  background-color: rgba(255, 255, 255, 0.064);
+}
+
+.titre {
+  padding: 50px 0 30px 70px;
+  text-align: start;
+  cursor: pointer;
+}
+.des1 {
+  text-indent: 15px;
+  padding-top: 0;
+  font-size: 20px;
+  font-weight: 400;
+  width: 60%;
+}
+.titre1 {
+  padding-bottom: 0;
+  font-size: 40px;
+  font-weight: 400;
+}
+.pst2 {
+  font-weight: bold;
+}
+.pst2:hover {
+  text-decoration: underline;
+}
+
+.mghimimi,
+.yassin,
+.jassir,
+.ali {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 50px;
+}
+
+#imgg {
+  height: 300px;
+  width: 24%;
+}
+
+.descr {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mghimimi .descr,
+.jassir .descr {
+  text-align: start;
+}
+
+.yassin .descr,
+.ali .descr {
+  text-align: end;
+}
+.descr h1 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.descr h1 span {
+  font-weight: 500;
+}
+
+.descr p {
+  font-size: 20px;
+}
+
+/* Responsive styles for screens 1000px and below */
+@media (max-width: 1000px) {
+  .titre {
+    padding: 30px 0 30px 30px;
+    text-align: start;
+    cursor: pointer;
+  }
+  .des1 {
+    font-size: 18px;
+    width: 100%;
+  }
+  .titre1 {
+    font-size: 30px;
+  }
+  .pst2 {
+    font-weight: 600;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'mghimimi yassin'
+      'jassir ali';
+    gap: 20px;
+  }
+
+  .mghimimi,
+  .yassin,
+  .jassir,
+  .ali {
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.064);
+    border-radius: 40px;
+    transition: all 0.3s;
+  }
+  .mghimimi:hover,
+  .yassin:hover,
+  .jassir:hover,
+  .ali:hover {
+    background-color: rgba(255, 255, 255, 0.141);
+  }
+
+  .yassin,
+  .ali {
+    flex-direction: column-reverse;
+  }
+
+  #imgg {
+    height: 300px;
+    width: 70%;
+  }
+
+  .descr {
+    text-align: center;
+  }
+
+  .descr h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .descr p {
+    font-size: 14px;
+    margin: 0;
+  }
+  .descr h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .descr p {
+    text-align: center;
+  }
+}
+
+/* Responsive styles for screens 700px and below */
+@media (max-width: 700px) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'mghimimi'
+      'yassin'
+      'jassir'
+      'ali';
+  }
+  .titre {
+    padding: 0 0 30px 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  .titre {
+    padding-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .des1 {
+    font-size: 16px;
+    width: 100%;
+  }
+  .titre1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 450px) {
+  .descr h1 {
+    font-size: 18px;
+  }
+
+  .descr p {
+    font-size: 12px;
+  }
+  #secc {
+    gap: 10px;
+  }
+  #imgg {
+    height: 170px;
+    width: 55%;
+    padding-bottom: 10px;
+  }
+}
