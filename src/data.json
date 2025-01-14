@@ -1,7 +1,7 @@
 {
   "resources": [
     {
-      "category": "iphone",
+      "category": "iPhone",
       "items": [
         {
           "name": "iPhone 8",
@@ -10,10 +10,10 @@
           "image": "/resources/iphone/iphone8.png"
         },
         {
-          "name": "iPhone 11",
+          "name": "iPhone 11 Pro",
           "price": 4500,
-          "description": "iPhone 11 : puissant, double appareil photo 12 MP, 64/128/256 Go.",
-          "image": "/resources/iphone/iphone11.png"
+          "description": "iPhone 11 Pro : puissant, double appareil photo 12 MP, 64/128/256 Go.",
+          "image": "/resources/iphone/iphone11pro.png"
         },
         {
           "name": "iPhone 11 Pro Max",
@@ -49,19 +49,19 @@
           "name": "iPhone 15",
           "price": 4500,
           "description": "iPhone 15 : écran 6,1\", A16, 512 Go, 5G.",
-          "image": "/resources/iphone/iphone11.png"
+          "image": "/resources/iphone/iphone15.png"
         },
         {
           "name": "iPhone X",
           "price": 2300,
           "description": "iPhone X : écran 5,8\", A11, 256 Go, 5G.",
-          "image": "/resources/iphone/iphone11.png"
+          "image": "/resources/iphone/iphoneX.png"
         },
         {
           "name": "iPhone Xr",
           "price": 4500,
           "description": "iPhone XR : écran 6,1\", A12, 256 Go, 5G.",
-          "image": "/resources/iphone/iphone11.png"
+          "image": "/resources/iphone/iphoneXr.png"
         }
       ]
     },
@@ -119,7 +119,7 @@
       ]
     },
     {
-      "category": "redmi",
+      "category": "Redmi",
       "items": [
         {
           "name": "Redmi 8",

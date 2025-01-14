@@ -1,0 +1,187 @@
+.alll {
+  padding: 70px;
+}
+.introduction {
+  padding: 10px 0 40px 0;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-radius: 40px;
+}
+.introduction h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.introduction h1 span {
+  font-weight: 600;
+  background-color: black;
+  padding: 0 10px;
+  border-radius: 15px;
+}
+
+.introduction h1 span span {
+  color: white;
+  padding: 0;
+}
+.introduction p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.productss {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+.product-list {
+  padding-top: 50px;
+}
+.product-card a {
+  text-decoration: none;
+}
+.product-card {
+  width: 300px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.063);
+  transition: all 0.3s;
+}
+.product-card:hover {
+  background-color: rgba(255, 255, 255, 0.141);
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+.search-bar input {
+  width: 80%;
+  height: 30px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.189);
+}
+.search-bar button {
+  color: black;
+  font-size: 34px;
+  background-color: white;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.search-bar button:hover {
+  color: #2cc29c;
+  font-size: 35px;
+}
+.imgpp {
+  width: 300px;
+  height: 300px;
+}
+.ttlpro,
+.descpro,
+.prixpro {
+  color: white;
+  transition: 0.1s;
+}
+.ttlpro {
+  font-size: 22px;
+  font-weight: 500;
+}
+.prixpro {
+  font-weight: 700;
+  font-size: 16px;
+}
+.descpro:hover,
+.prixpro:hover {
+  text-decoration: underline;
+}
+.ttlpro:hover {
+  text-decoration: underline;
+  color: #2cc29c;
+}
+.cat {
+  font-size: 30px;
+  margin: 10px;
+  padding-top: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #cbb4a2;
+}
+
+@media (max-width: 768px) {
+  .alll {
+    padding: 30px;
+  }
+  .introduction h1 {
+    font-size: 30px;
+  }
+  .introduction h1 span {
+    font-weight: 500;
+  }
+
+  .introduction p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .cat {
+    font-size: 26px;
+    padding-top: 20px;
+    font-weight: 400;
+  }
+  .imgpp {
+    width: 200px;
+    height: 200px;
+  }
+
+  .search-bar input {
+    width: 80%;
+    height: 25px;
+    font-size: 18px;
+  }
+  .search-bar button {
+    font-size: 30px;
+    background-color: white;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .search-bar button:hover {
+    color: #2cc29c;
+    font-size: 31px;
+  }
+  .introduction {
+    padding: 20px;
+  }
+  .product-list {
+    padding-top: 0px;
+  }
+  .descpro{
+    font-size: 13px;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  .introduction {
+    padding: 20px;
+  }
+  .introduction h1 {
+    font-size: 20px;
+  }
+  .introduction p {
+    display: none;
+  }
+  .search-bar input {
+    width: 90%;
+    height: 20px;
+    font-size: 14px;
+  }
+  .search-bar button {
+    font-size: 26px;
+  }
+  .search-bar button:hover {
+    font-size: 27px;
+  }
+}

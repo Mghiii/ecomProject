@@ -1,15 +1,16 @@
-import React from 'react';
-import './app.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from "react";
+import "./app.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // Import des composants de pages
-import Home from './pages/Home';
-import About from './pages/About';
-import Blogs from './pages/Blogs';
-import Contact from './pages/Contact';
-import Products from './pages/Products';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import Products from "./pages/Products";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
+          <Route
+            path="/products/:productName"
+            element={<ProductDetails />}
+          />{" "}
         </Routes>
       </div>
       <Footer />

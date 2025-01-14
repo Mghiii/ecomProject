@@ -1,9 +1,9 @@
-import React from 'react';
-import mghimimi from '../assets/images/mghimimi.png';
-import yassin from '../assets/images/yassin.png';
-import jassir from '../assets/images/jassir.png';
-import ali from '../assets/images/ali.png';
-import './about.css';
+import React from "react";
+import mghimimi from "../assets/images/mghimimi.png";
+import yassin from "../assets/images/yassin.png";
+import jassir from "../assets/images/jassir.png";
+import ali from "../assets/images/ali.png";
+import "./about.css";
 
 export default function About() {
   return (
