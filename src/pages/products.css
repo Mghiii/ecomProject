@@ -4,7 +4,7 @@
 .introduction {
   padding: 10px 0 40px 0;
   text-align: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: black;
   border-radius: 40px;
 }
@@ -73,7 +73,6 @@
 }
 .search-bar button:hover {
   color: #2cc29c;
-  font-size: 35px;
 }
 .imgpp {
   width: 300px;
@@ -149,7 +148,6 @@
   }
   .search-bar button:hover {
     color: #2cc29c;
-    font-size: 31px;
   }
   .introduction {
     padding: 20px;
@@ -157,10 +155,9 @@
   .product-list {
     padding-top: 0px;
   }
-  .descpro{
+  .descpro {
     font-size: 13px;
   }
-  
 }
 
 @media (max-width: 400px) {
@@ -180,8 +177,5 @@
   }
   .search-bar button {
     font-size: 26px;
-  }
-  .search-bar button:hover {
-    font-size: 27px;
   }
 }

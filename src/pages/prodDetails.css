@@ -1,0 +1,163 @@
+.ps {
+  padding: 50px;
+}
+.ps h1 {
+  font-size: 40px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.product-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.prodImg {
+  width: 30%;
+}
+.prodImg img {
+  width: 100%;
+}
+.descProd {
+  width: 30%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+.contProd {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.contProd h1,
+.contProd p {
+  margin: 0;
+}
+
+.contProd h1 {
+  font-size: 34px;
+  font-weight: 500;
+}
+.ppp {
+  font-size: 18px;
+}
+.pprix {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2cc29c;
+  background-color: #fff;
+  padding: 5px;
+  width: 160px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.btnProd {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.btnProd button {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+.ajout {
+  background-color: white;
+}
+.ajout:hover {
+  background-color: black;
+  border: #2cc29c 2px solid;
+  color: #2cc29c;
+}
+
+.achet {
+  background-color: black;
+  border: 2px solid white !important;
+  color: white;
+}
+.achet:hover {
+  background-color: #2cc29c;
+  border: none !important;
+  color: white;
+}
+
+.back {
+  background-color: black;
+  color: rgb(247, 31, 31);
+  border: 2px solid rgb(247, 31, 31) !important;
+}
+.back:hover {
+  background-color: rgb(247, 31, 31);
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .prodImg {
+    width: 40%;
+  }
+  .descProd {
+    width: 50%;
+  }
+  .contProd {
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .ps {
+    padding: 20px;
+  }
+  .ps h1 {
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .prodImg {
+    width: 100%;
+  }
+  .prodImg {
+    width: 80%;
+  }
+  .descProd {
+    width: 50%;
+  }
+  .contProd {
+    gap: 30px;
+  }
+  .product-details {
+    flex-direction: column;
+  }
+  .descProd {
+    width: 100%;
+  }
+  .btnProd button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .descProd {
+    justify-content: center;
+    gap: 40px;
+  }
+  .contProd h1 {
+    font-size: 25px;
+  }
+  .ppp {
+    font-size: 14px;
+  }
+  .pprix {
+    font-size: 18px;
+    color: #2cc29c;
+  }
+  .btnProd button {
+    font-size: 14px;
+  }
+}

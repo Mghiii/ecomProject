@@ -1,21 +1,21 @@
-import React from 'react';
-import './home.css';
-import welcome from '../assets/images/welcome.jpg';
-import imagePub2 from '../assets/images/image-pub2.png';
-import imagePub1 from '../assets/images/phone-pub.jpg';
-import iphone15 from '../assets/resources/iphone15.png';
-import redmiNote13Pro from '../assets/resources/redmiNote13Pro.png';
-import lenovoLegion from '../assets/resources/lenovo-legion.png';
-import iphoneX from '../assets/resources/iphoneX.png';
-import iphone12proMax from '../assets/resources/iphone12proMax.png';
-import msiLap from '../assets/images/msiLap.png';
-import iphoneBlog from '../assets/images/iphoneBlog.png';
-import tuf1 from '../assets/images/tuf1.jpg';
-import apple from '../assets/partenariat/apple.png';
-import samsung from '../assets/partenariat/samsung.png';
-import msi from '../assets/partenariat/msi.png';
-import hp from '../assets/partenariat/hp.png';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./home.css";
+import welcome from "../assets/images/welcome.jpg";
+import imagePub2 from "../assets/images/image-pub2.png";
+import imagePub1 from "../assets/images/phone-pub.jpg";
+import iphone15 from "../assets/resources/iphone15.png";
+import redmiNote13Pro from "../assets/resources/redmiNote13Pro.png";
+import lenovoLegion from "../assets/resources/lenovo-legion.png";
+import iphoneX from "../assets/resources/iphoneX.png";
+import iphone12proMax from "../assets/resources/iphone12proMax.png";
+import msiLap from "../assets/images/msiLap.png";
+import iphoneBlog from "../assets/images/iphoneBlog.png";
+import tuf1 from "../assets/images/tuf1.jpg";
+import apple from "../assets/partenariat/apple.png";
+import samsung from "../assets/partenariat/samsung.png";
+import msi from "../assets/partenariat/msi.png";
+import hp from "../assets/partenariat/hp.png";
+import { Link } from "react-router-dom";
 import {
   overMouse,
   outMouse,
@@ -23,7 +23,7 @@ import {
   outMouse2,
   overMouse3,
   outMouse3,
-} from '../script.js';
+} from "../script.js";
 
 export default function Home() {
   const handleOverMouse = () => {
